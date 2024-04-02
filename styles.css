@@ -1,11 +1,14 @@
+@import "font-awesome";
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;console.log();
 }
 body{
     background: #080808 ;
@@ -38,6 +41,35 @@ body{
 .container{
     padding: 10px 10%;
 }
+
+body {
+    height: 200vh;
+    background-color: rgb(200, 233, 200);
+    font-family: 'Poppins', sans-serif;
+}
+
+.scrollbutton {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px; /* Adjusted right value */
+    background-color: #ff004f;;
+    color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 10px; /* Adjusted font size */
+    z-index: 1000; /* Ensure button is on top of other content */
+}
+
+.scrollbutton:hover {
+    background-color: #230d66;
+    color: white;
+    font-size: 15px; /* Adjusted font size */
+    padding: 20px;
+}   
+
+
 nav{
     display: flex;
     align-items: center;
@@ -311,6 +343,12 @@ form .btn2{
 }
 .copyright i{
     color: #ff004f;
+    text-align: center;
+}
+.copyright p{
+    text-align: center;
+    font-size: 15px;
+
 }
 
 /* ----------css for small screen---------- */
@@ -2239,9 +2277,6 @@ button *:active {
     .owl-carousel .owl-stage-outer {
         top: -30px;
     }
-/* 
-    .back-to-top {
 
-    } */
 }
 
