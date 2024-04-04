@@ -24,7 +24,30 @@ body{
     background-position:  center;
 }
 
-.projects, img {
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.pictures {
+    display: inline-block;
+}
+
+.pictures img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+.img {
     width: 300px;
     height: 500px;
     object-fit: cover;
