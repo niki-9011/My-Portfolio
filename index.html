@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" <link
+        href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -64,7 +64,6 @@
         </div>
     </div>
 
-    <!-- About  -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -77,6 +76,43 @@
                         engineer brings a unique perspective and meticulous attention to detail.</p>
                     <a href="document/Nikolay Videnov Resume.pdf" download class="btn btn2">Download CV</a>
 
+                </div>
+                <div class="about-col-1">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Publication</p>
+                        
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Soft Skills</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>&#10148; 24 hours
+                                SoftUni students completed a
+                                project for the United Nations</span>
+                                <br>• <a href="https://www.24chasa.bg/bulgaria/article/14699753?fbclid">https://www.24chasa.bg/bulgaria/article/14699753?fbclid</a>
+                                <img class="24" src="images/24.jpg" alt="images/24.jpg">
+                            </li>
+                      
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>&#10148; Attention to detail</span></li>
+                            <li><span>&#10148; Communication </span></li>
+                            <li><span>&#10148; Analysis </span></li>
+                            <li><span>&#10148; Teamwork & cooperation </span>
+                           </li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>&#10148;Bachelor of Technical University Konstantin Preslavsky (2009-2012) <br> </span>
+                                • Engineer in Communication and information systems<br>
+                            <li><span>&#10148;Software university (2022 - Present)</span><br>• Full Stack Developer
+                                </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -252,10 +288,8 @@
                 <div class="work">
                     <img src="images/sdsn.jpg">
                     <div class="layer">
-                        <h3>Website application</h3>
-                        <p> Created and tested functional REST APIs using Java and SpringBoot to perform the common
-                            function of using a
-                            Blogging application.</p>
+                        <h3>Website</h3>
+                        <p> Development of a website for the Bulgarian representation of the "UN Sustainable Development Solutions Network (SDSN)".</p>
                         <a href="https://sdsn.bg"><i class="fa-solid fa-link"></i></a>
                     </div>
 
@@ -263,19 +297,18 @@
                 <div class="work">
                     <img src="images/electric.png">
                     <div class="layer">
-                        <h3>Net Banking Application</h3>
-                        <p> A net banking web application developed using Java to simulate the common functions of using
-                            a bank account. </p>
-                        <a href="https://github.com/niki-9011/NetBankingApplication"><i
+                        <h3>Electric Drive</h3>
+                        <p> This is the Electric Drive website made with Django framework in Python, JavaScript, HTML & CSS, Database - PostgreSQL. </p>
+                        <a href="https://github.com/niki-9011/Electric-Django_App"><i
                                 class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/drone.png">
                     <div class="layer">
-                        <h3>Portfolio Website</h3>
-                        <p> A Simple responsive Website using Html, Css, JavaScript.</p>
-                        <a href="https://vky546.github.io/My-Portfolio-Website/"><i class="fa-solid fa-link"></i></a>
+                        <h3>Drone Application</h3>
+                        <p> Creating a JavaScript application with JSON input.</p>
+                        <a href="https://github.com/niki-9011/Drone_App_JS-Nemetschek"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -309,15 +342,65 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
                     <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/148704/38626af1"
                             target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
+                            <img class="feature-item rounded certificate-image" src="images/fundamentals.jpg" img>
                         </a>
                         <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
+                        <p>Fundamentals</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
+                    <div class="position-relative bg pt-5 pb-4 px-4">
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/159312/7c122ade"
+                            target="_blank">
+                            <img class="feature-item rounded certificate-image" src="images/advanced.jpg" img>
+                        </a>
+                        <h5 class="mt-2 mb-0">Python</h5>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
+                    <div class="position-relative bg pt-5 pb-4 px-4">
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/168029/220bda53"
+                            target="_blank">
+                            <img class="feature-item rounded certificate-image" src="images/oop.jpeg" img>
+                        </a>
+                        <h5 class="mt-2 mb-0">Python</h5>
+                        <p>OOP</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
+                    <div class="position-relative bg pt-5 pb-4 px-4">
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/185075/89c2ad19"
+                            target="_blank">
+                            <img class="feature-item rounded certificate-image" src="images/web-basics.png" img>
+                        </a>
+                        <h5 class="mt-2 mb-0">Python</h5>
+                        <p>Web</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
+                    <div class="position-relative bg pt-5 pb-4 px-4">
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/182347/38951744"
+                            target="_blank">
+                            <img class="feature-item rounded certificate-image" src="images/web-framework.png" img>
+                        </a>
+                        <h5 class="mt-2 mb-0">Python</h5>
+                        <p>Web Framework</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
+                    <div class="position-relative bg pt-5 pb-4 px-4">
+                        <a class="certificate-link" href="https://softuni.bg/certificates/details/190656/c0871b4e"
+                            target="_blank">
+                            <img class="feature-item rounded certificate-image" src="images/HTML & CSS - September 2023 - Certificate.jpeg" img>
+                        </a>
+                        <h5 class="mt-2 mb-0">Java Script </h5>
+                        <p>HTML & CSS</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
                     <div class="position-relative bg pt-5 pb-4 px-4">
                         <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
                             target="_blank">
@@ -346,64 +429,11 @@
                         <h5 class="mt-2 mb-0">Python</h5>
                         <p>Basic</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
-                    <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
-                            target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
-                        </a>
-                        <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
-                    <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
-                            target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
-                        </a>
-                        <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
-                    <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
-                            target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
-                        </a>
-                        <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
-                    <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
-                            target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
-                        </a>
-                        <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp certificate-item" data-wow-delay="0.1s">
-                    <div class="position-relative bg pt-5 pb-4 px-4">
-                        <a class="certificate-link" href="https://softuni.bg/certificates/details/135795/55d5ad5c"
-                            target="_blank">
-                            <img class="feature-item rounded certificate-image" src="images/basics.jpg" img>
-                        </a>
-                        <h5 class="mt-2 mb-0">Python</h5>
-                        <p>Basic</p>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
     </div>
-
-
-
 
     <div class="slide-img">
 
@@ -449,7 +479,6 @@
 
     </div>
 
-
     <!--Contact-->
     <div id="contact">
         <div class="container">
@@ -485,8 +514,6 @@
     <a href="#" class="scrollbutton" id="scrollbuttonid">
         <i class="fas fa-arrow-up"></i>
     </a>
-
-
 
     <script src="app.js"></script>
 </body>

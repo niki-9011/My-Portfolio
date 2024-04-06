@@ -1,5 +1,5 @@
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+let tablinks = document.getElementsByClassName("tab-links");
+let tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname) {
     for (tablink of tablinks) {
@@ -12,7 +12,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab")
 }
 
-var sidemenu = document.getElementById("sidemenu");
+let sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
     sidemenu.style.right = "0";
@@ -70,7 +70,7 @@ class Slideshow {
     }
     init() {
       
-      var self = this;
+      let self = this;
       
       // Charmed title
       this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
@@ -102,10 +102,10 @@ class Slideshow {
             modifierClass: 'slideshow-pagination-',
             renderBullet: function (index, className) {
               
-              var slideIndex = index,
+              let slideIndex = index,
                   number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
               
-              var paginationItem = '<span class="slideshow-pagination-item">';
+              let paginationItem = '<span class="slideshow-pagination-item">';
               paginationItem += '<span class="pagination-number">' + number + '</span>';
               paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
               paginationItem += '</span>';
