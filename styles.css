@@ -152,7 +152,7 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    width: 100%;
+    width: 150%;
     border-radius: 10px;
     display: block;
     transition: transforms 0.5s;
@@ -170,7 +170,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0, 40px;
+    padding: 0, 30px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -280,6 +280,13 @@ form .btn2{
 }
 .copyright i{
     color: #ff004f;
+
+}
+.fa-regular {
+    padding-top: 1em;
+}
+.text-center {
+    margin-bottom: 2em;
 }
 
 /* ----------css for small screen---------- */
