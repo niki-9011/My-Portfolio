@@ -958,7 +958,7 @@ h6,
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: #ff004f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

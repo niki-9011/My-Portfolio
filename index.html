@@ -30,32 +30,26 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Home -->
     <div id="header">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#skills">Skills</a> </li>
+                <li><a href="#certificates">Certificates</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
         <div class="container">
-            <nav>
-
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a> </li>
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#projects">Projects</a> </li>
-                    <li><a href="#skills">Skills</a> </li>
-                    <li><a href="#certificates">Certificates</a> </li>
-                    <li><a href="#contact">Contact</a> </li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-
-                </ul>
-
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-
-            </nav>
             <div class="info">
                 <div class="header-text">
-
-
                     <h1>Hi, I'm <span>Nikolay,</span> <br></h1>
                     <p>Full Stack Junior Developer</p>
-
                 </div>
                 <div class="img">
                     <img src="images/az.jpg" alt="me">
@@ -451,6 +445,7 @@
             </div>
         </div>
     </div>
+
     <!-- Video -->
     <div class="slide-img">
         <div class="swiper-container slideshow">
@@ -515,11 +510,11 @@
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Nikolay Videnov</p>
     </div>
 
+    <!--Scrollbutton-->
     <a href="#" class="scrollbutton" id="scrollbuttonid">
         <i class="fas fa-arrow-up"></i>
     </a>
-
+    
     <script src="app.js"></script>
 </body>
-
 </html>
