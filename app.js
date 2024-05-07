@@ -34,21 +34,7 @@ form.addEventListener('submit', e => {
         
     })
     form.reset();
-    // .then(response => {
-    //     if (response.ok) {
-    //         msg.innerHTML = "Message sent successfully"; 
-    //         setTimeout(function () {
-    //             msg.innerHTML = "";
-    //         }, 5000);
-    //         form.reset();
-    //     } else {
-    //         throw new Error('Network response was not ok.');
-    //     }
-    // })
-    // .catch(error => {
-    //     console.error('Error!', error.message);
-    //     msg.innerHTML = "An error occurred while sending the message"; 
-    // });
+    
 });
 
 let mysBtn = document 
