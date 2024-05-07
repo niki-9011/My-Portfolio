@@ -25,18 +25,43 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwnDOMVSi5FoGLF0TcrXo
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function () {
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+const form = document.getElementById('emailForm');
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const payload = {
+            method: 'POST',
+            body: formData
+        };
+
+        fetch('https://www.nikolai-videnov.site', payload)
+            .then(response => {
+                if (response.ok) {
+                    msg.textContent = 'Message sent successfully';
+                    form.reset();
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            })
+            .catch(error => {
+                console.error('Error!', error);
+                msg.textContent = 'Failed to send message';
+            });
+    });
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response => {
+//             msg.innerHTML = "Message sent successfully"
+//             setTimeout(function () {
+//                 msg.innerHTML = ""
+//             }, 5000)
+//             form.reset()
+//         })
+//         .catch(error => console.error('Error!', error.message))
+// })
 
 let mysBtn = document 
     .getElementById('scrollbuttonid'); 
