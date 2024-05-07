@@ -22,23 +22,32 @@ function closemenu() {
 }
 
 const form = document.forms['submit-to-email'];
-        const msg = document.getElementById("msg");
+const msg = document.getElementById("msg");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch('https://formspree.io/f/moqgrojr', { 
-                method: 'POST', 
-                body: new FormData(form) 
-            })
-            .then(response => {
-                msg.innerHTML = "Message sent successfully";
-                setTimeout(function () {
-                    msg.innerHTML = "";
-                }, 0);
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message));
-        });
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    msg.innerHTML = "Sending message...";
+
+    fetch('https://formspree.io/f/moqgrojr', { 
+        method: 'POST', 
+        body: new FormData(form) 
+    })
+    .then(response => {
+        if (response.ok) {
+            msg.innerHTML = "Message sent successfully"; 
+            setTimeout(function () {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "An error occurred while sending the message"; 
+    });
+});
 
 let mysBtn = document 
     .getElementById('scrollbuttonid'); 
