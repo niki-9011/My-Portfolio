@@ -43,10 +43,10 @@ form.addEventListener('submit', e => {
             throw new Error('Network response was not ok.');
         }
     })
-    .catch(error => {
-        console.error('Error!', error.message);
-        msg.innerHTML = "An error occurred while sending the message"; 
-    });
+    // .catch(error => {
+    //     console.error('Error!', error.message);
+    //     msg.innerHTML = "An error occurred while sending the message"; 
+    // });
 });
 
 let mysBtn = document 
