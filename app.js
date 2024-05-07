@@ -21,22 +21,24 @@ function closemenu() {
     sidemenu.style.right = "-200px";
 }
 
-const scriptURL = 'https://www.nikolai-videnov.site'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+const form = document.forms['submit-to-email'];
+        const msg = document.getElementById("msg");
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function () {
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch('https://formspree.io/f/moqgrojr', { 
+                method: 'POST', 
+                body: new FormData(form) 
+            })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
 
 let mysBtn = document 
     .getElementById('scrollbuttonid'); 
