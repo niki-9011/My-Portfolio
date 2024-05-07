@@ -34,7 +34,7 @@ const form = document.forms['submit-to-email'];
                 msg.innerHTML = "Message sent successfully";
                 setTimeout(function () {
                     msg.innerHTML = "";
-                }, 5000);
+                }, 0);
                 form.reset();
             })
             .catch(error => console.error('Error!', error.message));
