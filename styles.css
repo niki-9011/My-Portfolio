@@ -2458,3 +2458,19 @@ transform-origin: 0 0;
 .btn-click-animation {
     animation: clickAnimation 0.8s ease; 
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header-text h1 span {
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.header-text p {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
