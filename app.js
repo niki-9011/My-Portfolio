@@ -89,9 +89,7 @@ class Slideshow {
           preloadImages: true,
           updateOnImagesReady: true,
           
-          // lazy: true,
-          // preloadImages: false,
-
+  
           pagination: {
             el: '.slideshow-pagination',
             clickable: true,
@@ -140,7 +138,6 @@ class Slideshow {
     initEvents() {
         
         this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
-        //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
 
         this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
         
@@ -193,7 +190,6 @@ class Slideshow {
             x: 0,
         });
       
-        //this.animatePagination()
     
     }
     animatePagination(swiper, paginationEl) {
@@ -204,7 +200,7 @@ class Slideshow {
       this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
       
       console.log(swiper.pagination);
-      // console.log(swiper.activeIndex);
+     
       
       // Reset and animate
         TweenMax.set(this.DOM.paginationItemsLoader, {scaleX: 0});
